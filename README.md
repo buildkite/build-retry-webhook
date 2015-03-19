@@ -1,8 +1,10 @@
 # Buildkite Build Retry Webhook
 
-An example [Buildkite](https://buildkite.com/) webhook endpoint for retrying builds `n` number of times if they have the `RETRY_BUILDS` meta-data build property present.
+An example [Buildkite](https://buildkite.com/) webhook endpoint for retrying builds `n` number of times if they have the `retry_build` meta-data build property present.
 
 ## Usage
+
+1. Create a `write_builds` API Access Token in your Buildkite account.
 
 1. **Deploy it to Heroku** <br>[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
