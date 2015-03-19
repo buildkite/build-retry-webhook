@@ -1,0 +1,21 @@
+{
+  "name": "Buildkite Retry Webhook",
+  "description": "An example Buildkite webhook endpoint for retrying a build on failure",
+  "keywords": [
+    "ci",
+    "buildkite"
+  ],
+  "website": "https://buildkite.com/",
+  "repository": "https://github.com/buildkite/build-retry-webhooks",
+  "logo": "https://dl.dropboxusercontent.com/u/376613/buildkite/buildkite-logo.svg",
+  "env": {
+    "WEBHOOK_TOKEN": {
+      "description": "The Buildkite webhook token. Let Heroku generate this for you, copy it from the Heroku app’s config variables, and then paste it into Buildkite when you setup the webhook.",
+      "generator": "secret"
+    },
+    "API_ACCESS_TOKEN": {
+      "description": "A Buildkite API access token with write_builds scope access (to create one in Buildkite: Personal Settings → API Access Tokens)",
+      "generator": "secret"
+    }
+  }
+}
