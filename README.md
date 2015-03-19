@@ -6,11 +6,11 @@ An example [Buildkite](https://buildkite.com/) webhook endpoint for retrying bui
 
 1. **Deploy it to Heroku** <br>[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-2. **Find the secret:** In your new Heroku app go to Settings → Config Variables → Reveal Config Variables, and copy the `secret` variable value.
+2. **Find the secret:** In your new Heroku app go to Settings → Config Variables → Reveal Config Variables, and copy the `WEBHOOK_TOKEN` variable value.
 
-3. **Set up the webhook:** In Buildkite go to Settings → Notifications → Webhooks and add a new webhook pointing to your new Heroku app, adding `?secret=your-secret` to the end. For example: `https://your-app-name.herokuapp.com/?secret=your-secret`
+3. **Set up the webhook:** In Buildkite go to Settings → Notifications → Webhooks and add a new webhook pointing to your new Heroku app, and using the token you copied from your Heroku app’s config.
 
-4. **Trigger a build with metadata retry_build=n** :tada:
+4. **Trigger a build via the API**: Be sure to include `"meta-data": {"retry_build": n}` :tada:
 
 ## License
 
