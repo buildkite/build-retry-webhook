@@ -4,7 +4,7 @@ An example [Buildkite](https://buildkite.com/) webhook endpoint for retrying bui
 
 ## Usage
 
-1. Create a `write_builds` API Access Token in your Buildkite account.
+1. **Create an API Access token**: In your Buildkite Personal Settings → API Access Tokens create a token with `write_builds` permission.
 
 1. **Deploy it to Heroku** <br>[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
